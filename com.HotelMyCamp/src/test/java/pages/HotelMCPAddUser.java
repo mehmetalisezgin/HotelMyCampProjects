@@ -18,7 +18,7 @@ import java.util.List;
 
 public class HotelMCPAddUser {
     public HotelMCPAddUser() {
-        PageFactory.initElements(Driver.getDriver(), this);
+    PageFactory.initElements(Driver.getDriver(), this);
     }
 
     //******************    Main Page>>>Log In>>>ADD USER Pages Webelements***********************
@@ -45,57 +45,64 @@ public class HotelMCPAddUser {
     public WebElement saveclickbutton;
     // mainpage>>LogIN>>AddUser>>passwordbox>>save
     @FindBy(xpath = "//input[@id='txtPassword']")
-    public WebElement adUserpasswordbox;
+    public WebElement addUserpasswordbox;
 
     // mainpage>>LogIN>>AddUser>>emailbox
     @FindBy(xpath = "//input[@id='Email']")
-    public WebElement adUseremailbox;
+    public WebElement addUseremailbox;
 
 
     // mainpage>>LogIN>>AddUser>>FullName
     @FindBy(xpath = "//input[@placeholder='Full Name']")
-    public WebElement adUserFullNamebox;
+    public WebElement addUserFullNamebox;
 
 
     // mainpage>>LogIN>>AddUser>>PhoneNo
     @FindBy(xpath = "//input[@placeholder='PhoneNo']")
-    public WebElement adUserPhoneNobox;
+    public WebElement addUserPhoneNobox;
 
     // mainpage>>LogIN>>AddUser>>SocialSecurityNumber
     @FindBy(xpath = "//input[@placeholder='Social Security Number']")
-    public WebElement adUserSocialSecurityNumberbox;
+    public WebElement addUserSocialSecurityNumberbox;
 
     // mainpage>>LogIN>>AddUser>>DrivingLicense
     @FindBy(xpath = "//input[@placeholder='Driving License']")
-    public WebElement adUserDrivingLicensebox;
+    public WebElement addUserDrivingLicensebox;
 
     // mainpage>>LogIN>>AddUser>>Country
     @FindBy(xpath = "//select[@id='IDCountry']")
-    public WebElement adUserCountrybox;
+    public WebElement addUserCountrybox;
 
     // mainpage>>LogIN>>AddUser>>State
     @FindBy(xpath = "//select[@id='IDState']")
-    public WebElement adUserStatebox;
+    public WebElement addUserStatebox;
 
     // mainpage>>LogIN>>AddUser>>Address
     @FindBy(xpath = "//input[@placeholder='Address']")
-    public WebElement adUserAddressbox;
+    public WebElement addUserAddressbox;
 
     // mainpage>>LogIN>>AddUser>>DateofBirth
     @FindBy(xpath = "//input[@placeholder='Date of Birth']")
-    public WebElement adUserDateofBirthbox;
+    public WebElement addUserDateofBirthbox;
+
+    // mainpage>>LogIN>>AddUser>>DateofBirth button
+    @FindBy(xpath = " (//button[@class='btn default'])[2]")
+    public WebElement addUserDateofBirthbutton;
+
+
+
 
     // mainpage>>LogIN>>AddUser>>WorkingSector
     @FindBy(xpath = "//input[@placeholder='WorkingSector']")
-    public WebElement adUserWorkingSectorbox;
+    public WebElement addUserWorkingSectorbox;
 
     // mainpage>>LogIN>>AddUser>>Role
     @FindBy(xpath = "//select[@id='IDRole']")
-    public WebElement adUserRolebox;
+    public WebElement addUserRolebox;
 
     // mainpage>>LogIN>>AddUser>>Approved
     @FindBy(xpath = "//div[@class='radio-list']")
-    public WebElement adUserApprovedbox;
+    public WebElement addUserApprovedbox;
 
 //*******************  MAIN PAGE>>> lOG IN  Webelements correct-incorrect words **************************
 
@@ -106,9 +113,7 @@ public class HotelMCPAddUser {
     // MainPage>>LogIn Username or Password is correct
     @FindBy(xpath = "//span[text()='ListOfUsers']")
     public WebElement usernamepasswordcorrect;
-    // DrivingLicense incorretc word
-    @FindBy(xpath = "//span[@for='DrivingLicense']")
-    public WebElement addDrivingLicenseIncorrect;
+
 
     //******************  Main Page>>>Log In>>>ADD USER Pages Webelements IN CORRECT WORDS *******************
 
@@ -140,6 +145,17 @@ public class HotelMCPAddUser {
     @FindBy(xpath = "//span[@for='IDCountry']")
     public WebElement adduserCountryincorrect;
 
+    // DrivingLicense incorretc word
+    @FindBy(xpath = "//span[@for='DrivingLicense']")
+    public WebElement addDrivingLicenseIncorrect;
+
+    // Address incorrect word
+    @FindBy(xpath = "//span[@for='Address']")
+    public WebElement addAdressIncorrect;
+
+    // Date of birth incorrect word
+    @FindBy(xpath = "//span[@for='BirthDate']")
+    public WebElement addBirthDateIncorrect;
 
 
 
